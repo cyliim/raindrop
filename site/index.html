@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Raindrop | cyliim</title>
+<meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="https://cdn.glitch.com/ef9d5a1d-f6af-4c7e-aae0-d292acab4cb0%2Frd.png?v=1560150668510"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
 
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="https://cyliim.js.org/projects/raindrop" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#commands" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMMANDS</a>
+    <a href="https://discordapp.com/api/oauth2/authorize?client_id=573365907494273027&permissions=268758080&scope=bot" class="w3-bar-item w3-button w3-padding-large w3-hide-small" target="_blank">INVITE</a>
+    <a href="https://discord.gg/M7aMdPZ" class="w3-bar-item w3-button w3-padding-large w3-hide-small" target="_blank">SERVER</a>
+    <a href="https://discordbots.org/bot/573365907494273027" >
+  <img src="https://discordbots.org/api/widget/servers/573365907494273027.svg?noavatar=true" alt="Raindrop" />
+</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="https://discordbots.org/bot/573365907494273027" class="w3-bar-item w3-button">DISCORD BOT LIST</a>
+        <a href="https://discord.bots.gg/bots/573365907494273027" class="w3-bar-item w3-button">DISCORD BOTS</a>
+         <a href="levels" class="w3-bar-item w3-button">LEVELS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="levels" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LEVELS</a>
+  <!--<a href="https://discordapp.com/api/oauth2/authorize?client_id=573365907494273027&permissions=8&scope=bot" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" target="_blank">INVITE</a>-->
+  <a href="https://discord.gg/M7aMdPZ" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" target="_blank">SERVER</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="">
+    <h2 class="w3-wide">Raindrop<br><img src="https://cdn.glitch.com/ef9d5a1d-f6af-4c7e-aae0-d292acab4cb0%2Fg.png?1558504346466" alt="Avatar" style="border-radius: 50%;" width="200" height="200"><br>Discord Bot</h2>
+    <p class="w3-opacity"><i>A multi-purpose bot for Discord, coded in <a href="https://discord.js.org/" target="_blank">discord.js</a></i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="commands">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">COMMANDS</h2>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>General Commands</b></p>
+            <p class="w3-opacity">Commands that don't really fit into a category</p>
+            <p><strong>ping: </strong>Shows the latency and API latency of the bot. Alias: <strong>p</strong><br><strong>uptime:</strong> Shows the uptime of the bot in Days, Hours and Minutes. Alias: <strong>up</strong><br><strong>stats: </strong>Shows bot stats.<br><strong>avatar: </strong>Shows either your's or a user that you mention's avatar. Alias: <strong>av</strong><br><strong>invite: </strong> Invite the bot. Alias: <strong>inv</strong><br><strong>spotify: </strong>Shows a user's spotify status.<br><strong>weather: </strong><br>Shows the weather for a specified location<br><strong>level: </strong>Shows your level. Alias: <strong>rank</strong></p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Utility Commands</b></p>
+            <p class="w3-opacity">Commands that add utility to your server</p>
+            <p><strong>calculate:</strong> Calculates the equation you input. Use * for multiplication and / for division. Alias: <strong>calc</strong><br><strong>serverinfo: </strong> Shows basic server info. Alias: <strong>si</strong><br><strong>userid: </strong>Gets the ID of a mentioned user. Aliases: <strong>id, uid</strong><br><strong>userinfo: </strong>Shows user info of either you or a mentioned user. Aliases: <strong>ui, whois</strong><br><strong>announce: </strong>Announce something to the server.<br><strong>resetroles: </strong> Resets a user's roles. Alias: <strong>rr</strong></p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="w3-container w3-white">
+            <p><b>Fun Commands</b></p>
+            <p class="w3-opacity">Commands for fun</p>
+            <p><strong>8ball: </strong>Ask a question and get an answer! Alias: <strong>ball</strong><br><strong>emojify: </strong>Turn your text into emojis! Alias: <strong>emoji</strong><br><strong>image: </strong>Shows an image from the search term you provide<br><strong>cat: </strong>Gets a cute picture of a cat from <a href="https://random.cat">random.cat</a>. Aliases: <strong>kitten, kitty</strong><br><strong>dog: </strong>Gets a cute picture of a dog from <a href="https://dog.ceo">dog.ceo</a>. Aliases: <strong>doggy, doggo</strong><br><strong>minesweeper: </strong>Play a fun game of minesweeper! Alias: <strong>ms</strong><br><strong>flip: </strong>Flip a coin! Aliases: <strong>coin, coinflip, cf</strong><br><strong>cowsay: </strong>Moooo... Alias: <strong>cow</strong><br><strong>fight: </strong>Fight someone! Alias: <strong>attack</strong><br><strong>hug: </strong>Hugs someone.<br><strong>meme: </strong>Get a meme straight from reddit<br><strong>chat: </strong>Chat with an AI. Restricted to Level 5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> and <a href="https://www.github.com" target="_blank">Github</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// When the user clicks anywhere outside of the modal, close it
+</script>
+
+</body>
+</html>
